@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+
+        <link href="main.css" rel="stylesheet">
+        <link href="https://img.icons8.com/pastel-glyph/64/000000/cat--v2.png" rel="icon">
+        <meta name="viewport" content="width=device-width, height=device-hei">
+        <title>Обо мне</title>
+
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+    </head>
+
+    <body class="body">
+
+        <header class="head">
+            
+            <img src="zielienaia-trava.jpg" class="picture">
+
+            <div class="name">Волкова Анастасия</div>
+            <div class="age">23 года</div>
+            <div class="city">Челябинск</div>
+
+            <img class="photo" src="https://avatars.mds.yandex.net/get-yapic/40138/enc-e649fa6c3e92a8ad6b68d62f6d58d9e7e6939ac929b3a0327cc98c22e5b6576d/islands-300" >
+            
+        </header>
+
+        <main class="about_text">
+    
+            <div class="column_1"> 
+                <hr align="left" width="50" size="8" color="#2F4F4F">
+                В 2018 году окончила Южно-Уральский Государственный Университет по специальности "Управление в технических системах".
+                В свободное от пар время занималась внеучебной деятельностью в качестве студенческого куратора и преподавателя игры на гитаре.
+                <br>После института проходила стажировку в компаниях "1Бит", где изучила особенности платформы 1С и основы бухгалтерского учета, и 
+                "Управление процессами", где изучила принципы программирования на 1С.                     
+                <br>Последнее место работы – компания ООО "Теплоприбор". Там я занималась подбором датчиков давления в соответствии с требованиями заказчика.
+            </div>
+
+            <div class="column_2"> 
+                
+                <input type="button" onclick="showText()" id="getContacts" value="Контактные данные" >
+                
+                <div id="contacts">
+                    Телефон: +7-904-819-29-37
+                    <br>Почта: nastyavolkova@mail.ru
+                </div>
+
+            </div>
+
+            <div class="column_3"> 
+                <hr align="left" width="50" size="8" color="#2F4F4F">
+                В свободное время я играю на гитаре, смотрю фильмы на языке оригинала, развожу цветы. 
+                Кроме того, люблю собраться с друзьями и поиграть в настольные игры.
+                <br>Разработала аркадную игру Xonix на 1С. Знаю основы HTML/CSS на уровне, достаточном для создания несложной веб-страницы.
+                Работала с PHP и базами данных. Есть опыт разработки на JavaScript.
+                <br>Я хочу самореализоваться в IT сфере и стремлюсь использовать возможности 
+                для приоретения полезных навыков.
+                Мне интересно изучать новое и перенимать опыт разработчиков.
+            </div>
+        </main>
+
+    </body>
+</html>
+
+<script>
+    function showText(){
+        
+        if(document.getElementById('contacts').style.display === 'block'){
+
+            document.getElementById('contacts').style.display = 'none'
+        }
+        else {
+            document.getElementById('contacts').style.display = 'block'; 
+        }
+    }
+     
+</script>
